@@ -1,3 +1,10 @@
+/*lab01
+
+open(), close(), read(), write() 시스템 호출을 이용하여, 한 파일의 내용을 다른 파일에 복사하는 copy.c 프로그램을 작성하라
+
+Afile의 크기가 512byte보다 작으면 한 번에 다 read()한 후 bfile에 write하고, 만약 512byte보다 크면 512byte씩 나누어서 반복하여 read(),  write()한다  
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
