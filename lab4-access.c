@@ -1,3 +1,11 @@
+/*lab04
+커맨드 라인에서 아래와 같은 내용을 입력 받는다 : 
+	% ./a.out <file-name> 
+ 
+access() 시스템 호출을 이용하여,  
+만약 파일이 존재하면 파일에서 20-byte의 데이터를 읽어서 std-out에 출력한다
+만약 존재하지 않으면 파일을 새로 만들어, “hello world”라는 내용을 파일에 write 한다. */
+
 #include <sys/types.h>
 #include <stdio.h>
 #include <fcntl.h>
