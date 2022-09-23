@@ -1,3 +1,8 @@
+/*lab05
+
+ Link()와 unlink() 시스템 호출을 사용하여 파일의 이름을 바꾸는 Linux의 mv 커맨드를 구현할 것 
+  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
