@@ -1,3 +1,11 @@
+/*lab06
+
+인자로서 디렉토리 이름과 파일의 접미사(suffix)를 읽어 들인다
+주어진 디렉토리를 탐색하여 이름에 인자로 주어진 접미사가 포함된 첫 번째 파일을 찾아 그 파일의 i-node 값과 파일 이름을 출력한다 
+주어진 파일이름(*s1)이 접미사(*s2)를 포함하는지 check 해 주는 함수 int match(char *s1, char *s2)를 활용할 것
+
+*/
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
