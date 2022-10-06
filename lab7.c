@@ -1,3 +1,8 @@
+/*lab07
+
+시스템 호출 getenv, setenv, 등을 사용하여 환경 변수 PATH 의 현재 값을 지우고 Lab #7이 저장된 directory 값으로 변경하는 프로그램을 작성하라 
+
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
