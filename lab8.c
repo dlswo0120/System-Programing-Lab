@@ -1,3 +1,9 @@
+/* <lab08>
+
+부모 프로세스는 smple.txt에 있는 문자열의 길이 만큼 자식 프로세스들을 생성한 후, waitpid 를 사용하여 생성된 순서대로 거두어 들이는 프로그램을 작성하라. 이때?자식?프로세스는?자신의?순서만큼?문자열을?복사해서?output.txt에?작성하고?종료해야?한다.
+
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
