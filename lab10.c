@@ -1,3 +1,11 @@
+/*
+<lab10>
+
+lab #9의 프로그램을 수정하여 다음의 프로그램을 작성하라 : 
+부모 프로세스는 자식 프로세스들의 종료를 기다리면서 종료하는 각 프로세스를 식별하여 메시지(“Parent: First (또는 Second) Child: “)와 함께 종료 상태(status)를 출력하는 프로그램을 작성하라
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
