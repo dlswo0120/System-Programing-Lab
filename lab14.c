@@ -1,3 +1,10 @@
+/*
+<lab14>
+
+Popen()과 pclose()를 사용하여 “who | sort”를 실행 시킬 수 있는 프로그램을 작성하라.  
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
