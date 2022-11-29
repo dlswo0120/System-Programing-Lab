@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <string.h>
+
+//lab15.c
+#define BUFSIZE	1024
+
+int main(){
+	int n;
+	int fd;
+	char buf[BUFSIZE];
+	int res = mkfifo("/tmp/myfifo", 0777);
+	if(res == 0) printf("success\n");
+
+	while(1){
+		if( (fd = open("myfifo",O_RDWR)) == -1){
+			perror("open");
+			exit(1);
+		}
+		fgets(buf, BUFSIZE,stdin);
+		write(fd,buf,strlen(buf));
+		close(fd);
+	}
+	
+	return 0;
+
+}
